@@ -18,7 +18,12 @@ class PizzaType(Base):
     id = Column(Integer, primary_key=True)
     title = Column(String(100), nullable=False, unique=True)
     description = Column(String(200), nullable=False)
-    choices = relationship('PizzaChoice', back_populates='pizza_type')
+
+    choices = relationship(
+        'PizzaChoice',
+        back_populates='pizza_type',
+        cascade='all',
+    )
 
 
 class PizzaChoice(Base):
