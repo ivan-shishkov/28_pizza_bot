@@ -25,6 +25,9 @@ class PizzaType(Base):
         cascade='all',
     )
 
+    def __str__(self):
+        return self.title
+
 
 class PizzaChoice(Base):
     __tablename__ = 'pizza_choices'
