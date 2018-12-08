@@ -23,6 +23,7 @@ class PizzaType(Base):
         'PizzaChoice',
         back_populates='pizza_type',
         cascade='all',
+        lazy='joined',
     )
 
     def __str__(self):
