@@ -1,6 +1,8 @@
 # Telegram Bot for Pizzeria
 
-[TODO. There will be project description]
+This bot allows you to display pizzeria menus based on data stored in the SQLite database.
+Data is loaded into the database from the JSON file.
+In addition, there is a convenient admin interface to manage the contents of the database.
 
 # How to Use
 
